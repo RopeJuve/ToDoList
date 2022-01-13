@@ -10,6 +10,8 @@ body{
     justify-content:center;
     align-items: center;
     height: 100vh;
+    color: white;
+    
 }
 
 .container {
@@ -17,7 +19,7 @@ body{
     align-items: center;
     border: 1px solid white;
     border-radius: 8px;
-    padding: 10px;
+    padding: 20px 50px;
 }
 
 .title-wraper{
@@ -28,6 +30,7 @@ body{
 h1{
     font-weight:bold;  
     color: white;
+    opacity: 0.8;
 }
 
 .task-wraper{
@@ -36,7 +39,7 @@ h1{
 }
 
 .task-wraper input{
-    color: white;
+    color: inherit;
     background-image: linear-gradient(165deg, #9796f0 1%, #FBC7D4 100%);
     padding: 8px;
     border: 1px solid white;
@@ -46,7 +49,18 @@ h1{
     border-top-left-radius: 8px;
 }
 
-.task-wraper button {
+.task-wraper input::placeholder {
+    color: white;
+    opacity: 0.5; 
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: white;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.btn-create{
     cursor: pointer;
     background-color: blueviolet;
     color: white;
